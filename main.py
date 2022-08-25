@@ -1,6 +1,15 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import whatstk
+from whatstk.whatsapp.objects import WhatsAppChat
 
 st.header('Whatsapp Chat Analytics')
+
+st.write('Por Nicolás Vrancovich')
+
+file = st.file_uploader('Agregá el archivo de tu chat acá', type='txt')
+
+df = WhatsAppChat.from_source(file).df
+
+if file:
+    df[:30]
