@@ -9,7 +9,6 @@ st.write('Por Nicolás Vrancovich')
 
 file = st.file_uploader('Agregá el archivo de tu chat acá', type='txt')
 
-df = WhatsAppChat.from_source(file).df
-
 if file:
+    df = WhatsAppChat.from_source(file).df
     df[:30]
