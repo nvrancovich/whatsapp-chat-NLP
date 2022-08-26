@@ -10,4 +10,4 @@ st.write('Por Nicolás Vrancovich')
 file = st.file_uploader('Agregá el archivo de tu chat acá', type='txt')
 
 if file:
-    file.read()
+    st.write(file.read())
