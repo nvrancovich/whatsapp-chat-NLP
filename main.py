@@ -7,7 +7,7 @@ st.header('Whatsapp Chat Analytics')
 
 st.write('Por Nicolás Vrancovich')
 
-file = st.file_uploader('Agregá el archivo de tu chat acá', type='txt')
+file = st.file_uploader('Agregá el archivo de tu chat acá')
 
 if file:
     dataframe = pd.read_csv(file)
