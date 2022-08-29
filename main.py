@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from functions import parse_file
-import stringio
 
 st.header('Whatsapp Chat Analytics')
 
