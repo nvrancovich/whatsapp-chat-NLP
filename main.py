@@ -11,4 +11,4 @@ file = st.file_uploader('Agregá el archivo de tu chat acá')
 
 if file:
     dataframe = pd.read_csv(file)
-    st.write(dataframe)
+    st.write(type(dataframe))
