@@ -10,4 +10,5 @@ st.write('Por Nicolás Vrancovich')
 file = st.file_uploader('Agregá el archivo de tu chat acá', type='txt')
 
 if file:
-    parse_file(file)[:30]
+    dataframe = pd.read_csv(file)
+    st.write(dataframe)
